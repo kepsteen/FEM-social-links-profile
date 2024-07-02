@@ -1,3 +1,3 @@
-# front-end-project
+# Social Links Profile
 
-A dynamic HTML, CSS, and TypeScript solo project.
+A simple interface to display your socials
