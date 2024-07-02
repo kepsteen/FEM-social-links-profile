@@ -1,34 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'neon-green': '#C4F82A',
+              grey: '#333333',
+              'dark-grey': '#1F1F1F',
+              black: '#141414',
+            },
+            fontFamily: {
+              inter: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div
+      class="card flex flex-col flex-shrink items-center my-[116px] mx-[24px] md:mx-auto bg-dark-grey rounded-lg min-w-[328px] max-w-[328px] sm:max-w-[384px]">
+      <img
+        src="assets/images/Screenshot 2024-07-01 at 8.59.53 PM.png"
+        alt="cody headshot"
+        class="w-[88px] h-[88px] rounded-full object-cover my-6" />
+      <h1 class="text-white font-inter font-semibold text-2xl mb-1">
+        Cody Epstein
+      </h1>
+      <p class="text-neon-green font-inter font-bold text-[0.875rem] mb-6">
+        Irvine, California
+      </p>
+      <p class="text-white font-inter text-[0.875rem]">
+        &#34;Front-end developer and avid pickleballer. &#34;
+      </p>
+      <ul class="px-[24px] my-[24px] w-full flex flex-col items-center">
+        <li class="w-full flex justify-center mb-4">
+          <a
+            class="text-white font-bold text-[0.875rem] text-center bg-grey py-[12px] w-full rounded-md hover:bg-neon-green hover:text-black"
+            href="https://github.com/kepsteen/"
+            >Github</a
+          >
+        </li>
+        <li class="w-full flex justify-center mb-4">
+          <a
+            class="text-white font-bold text-[0.875rem] text-center bg-grey py-[12px] w-full rounded-md hover:bg-neon-green hover:text-black"
+            href="https://www.frontendmentor.io/profile/kepsteen"
+            >Frontend Mentor</a
+          >
+        </li>
+        <li class="w-full flex justify-center mb-4">
+          <a
+            class="text-white font-bold text-[0.875rem] text-center bg-grey py-[12px] w-full rounded-md hover:bg-neon-green hover:text-black"
+            href="www.linkedin.com/in/cody-epstein"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="w-full flex justify-center mb-4">
+          <a
+            class="text-white font-bold text-[0.875rem] text-center bg-grey py-[12px] w-full rounded-md hover:bg-neon-green hover:text-black"
+            href="#"
+            >Twitter</a
+          >
+        </li>
+        <li class="w-full flex justify-center mb-4">
+          <a
+            class="text-white font-bold text-[0.875rem] text-center bg-grey py-[12px] w-full rounded-md hover:bg-neon-green hover:text-black"
+            href="#"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="attribution text-white">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
